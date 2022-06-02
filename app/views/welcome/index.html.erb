@@ -1,2 +1,17 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<h1>Hello from bobby</h1>
+
+<!--
+
+To test this, generate some data via `rails console` like this:
+
+    firstpage = Page.new(title: "Hello from bobby", content: "Some sample text here.")
+    firstpage.save
+
+-->
+
+  <% @pages.each do |page| %>
+    
+    <h3><%= page.title %></h3>
+    <p><%= page.content %></p>
+    <hr>
+  <% end %>
