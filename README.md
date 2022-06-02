@@ -1,24 +1,15 @@
-# README
+# Learn RoR
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Just some random stuff.
 
-Things you may want to cover:
+## Development
 
-* Ruby version
+To set up the environment:
 
-* System dependencies
+```ShellSession
+$ nix-shell -p ruby -p gem -p sqlite
+```
 
-* Configuration
+## Resources
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- [Ruby China](https://ruby-china.github.io/rails-guides/getting_started.html)
