@@ -9,9 +9,8 @@ To test this, generate some data via `rails console` like this:
 
 -->
 
-  <% @pages.each do |page| %>
-    
+<% @pages.each do |page| %>
     <h3><%= page.title %></h3>
     <p><%= page.content %></p>
     <hr>
-  <% end %>
+<% end %>
