@@ -10,7 +10,10 @@ To test this, generate some data via `rails console` like this:
 -->
 
 <% @pages.each do |page| %>
-    <h3><%= page.title %></h3>
+    <!-- The _path suffix here should be considered as a helper -->
+    <a href="<%= welcome_path(page) %>">
+        <%= page.title %>
+    </a>
     <p><%= page.content %></p>
     <hr>
 <% end %>
