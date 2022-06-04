@@ -17,4 +17,5 @@ $ nix-shell -p ruby -p gem -p sqlite
 
 ## Change log
 
+- 4 Jun 2022: [Section 7.3.4](https://guides.rubyonrails.org/getting_started.html#creating-a-new-article-finishing-up)
 - 2 Jun 2022: [Section 7.2](https://guides.rubyonrails.org/getting_started.html#resourceful-routing)
