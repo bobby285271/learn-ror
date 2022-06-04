@@ -15,8 +15,7 @@ class PagesController < ApplicationController
   end
 
   def create
-    # Title and content here are dummy values
-    @page = Page.new(title: "...", content: "...")
+    @page = Page.new(page_params)
 
     if @page.save
       redirect_to @page
@@ -25,4 +24,9 @@ class PagesController < ApplicationController
       render :new, status: :unprocessable_entity
     end
   end
+
+  private
+    def page_params
+      params.require(:page).permit(:title, :content)
+    end
 end
