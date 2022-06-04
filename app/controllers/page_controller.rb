@@ -1,4 +1,4 @@
-class WelcomeController < ApplicationController
+class PageController < ApplicationController
   def index
     # This fetches all pages from db.
     @pages = Page.all
