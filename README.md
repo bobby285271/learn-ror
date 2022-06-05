@@ -4,10 +4,10 @@ Just some random stuff.
 
 ## Development
 
-To set up the environment:
+To set up the development environment:
 
 ```ShellSession
-$ nix-shell -p ruby -p gem -p sqlite
+$ nix-shell
 ```
 
 ## Resources
