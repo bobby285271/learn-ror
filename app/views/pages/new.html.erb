@@ -1,24 +1,3 @@
 <h1>New Page</h1>
 
-<!-- The form_with helper method instantiates a form builder. -->
-<%= form_with model: @page do |form| %>
-  <div>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
-    <% @page.errors.full_messages_for(:title).each do |message| %>
-      <div><%= message %></div>
-    <% end %>
-  </div>
-
-  <div>
-    <%= form.label :content %><br>
-    <%= form.text_area :content %>
-    <% @page.errors.full_messages_for(:content).each do |message| %>
-      <div><%= message %></div>
-    <% end %>
-  </div>
-
-  <div>
-    <%= form.submit %>
-  </div>
-<% end %>
+<%= render "form", article: @page %>
