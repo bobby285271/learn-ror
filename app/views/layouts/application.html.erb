@@ -6,6 +6,9 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <!-- https://github.com/rails/rails/issues/44879 -->
+    <%= turbo_include_tags %>
+
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   </head>
 
