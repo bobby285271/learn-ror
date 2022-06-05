@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_02_114830) do
+ActiveRecord::Schema[7.0].define(version: 2022_06_05_133311) do
+  create_table "comments", force: :cascade do |t|
+    t.string "commenter"
+    t.text "content"
+    t.integer "page_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["page_id"], name: "index_comments_on_page_id"
+  end
+
   create_table "pages", force: :cascade do |t|
     t.string "title"
     t.text "content"
@@ -18,4 +27,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_02_114830) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "comments", "pages"
 end
