@@ -6,3 +6,7 @@
 <hr />
 
 <%= link_to "Edit", edit_page_path(@page) %>
+<%= link_to "Destroy", page_path(@page), data: {
+    turbo_method: :delete,
+    turbo_confirm: "Are you sure?"
+} %>
