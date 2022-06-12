@@ -9,6 +9,8 @@ To test this, generate some data via `rails console` like this:
 
 -->
 
+Our blog has <%= Page.public_count %> articles and counting!
+
 <% @pages.each do |page| %>
   <% unless page.archived? %>
     <%= link_to page.title, page %>
