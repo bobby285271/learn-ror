@@ -1,4 +1,6 @@
 class CommentsController < ApplicationController
+  http_basic_authenticate_with name: "admin", password: "123456", only: :destroy
+
   def create
     @page = Page.find(params[:page_id])
     @comment = @page.comments.create(comment_params)

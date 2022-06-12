@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+  http_basic_authenticate_with name: "admin", password: "123456", except: [:index, :show]
+
   def index
     # This fetches all pages from db.
     @pages = Page.all
