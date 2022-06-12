@@ -8,4 +8,9 @@
     <strong>Comment:</strong>
     <%= comment.content %>
   </p>
+
+  <%= link_to "Destroy Comment", [comment.page, comment], data: {
+    turbo_method: :delete,
+    turbo_confirm: "Are you sure?"
+  } %>
 <% end %>
