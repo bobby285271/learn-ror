@@ -10,9 +10,11 @@ To test this, generate some data via `rails console` like this:
 -->
 
 <% @pages.each do |page| %>
+  <% unless page.archived? %>
     <%= link_to page.title, page %>
     <p><%= page.content %></p>
     <hr>
+  <% end %>
 <% end %>
 
 <%= link_to "New Page", new_page_path %>
