@@ -2,14 +2,6 @@
 
 Just some random stuff.
 
-## Development
-
-To set up the development environment:
-
-```ShellSession
-$ nix-shell
-```
-
 ## Resources
 
 - [Ruby China](https://ruby-china.github.io/rails-guides/getting_started.html)
